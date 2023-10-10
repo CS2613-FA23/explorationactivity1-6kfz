@@ -82,3 +82,4 @@ Rusty Harker
 * [MoviePy Documentation](https://zulko.github.io/moviepy/)
 * [zip() code snippets](https://www.geeksforgeeks.org/zip-in-python/)
 * [Python OS Module Documentation](https://docs.python.org/3/library/os.html)
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
