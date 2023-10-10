@@ -27,47 +27,58 @@ Usage: Choose a folder that only contains video files you'd like to edit
 What folder would you like to process?
 ```
 
-* Next you will select a resize scale, in this example I've chosen 0.7, this will lower the resolution to 70% of it's original size
+* Next you will select a resize scale, in this example I've chosen 0.7, this will lower the resolution to 70% of it's original size.
 ```
 Type in resize scale (type 1.0 to leave as is): 0.7
 ```
-* In most cases "none" will be the appropriate input, if you want some more fine tuning on quality then play around with different values and see what works
+* In most cases "none" will be the appropriate input, if you want some more fine tuning on quality then play around with different values and see what works.
 ```
 Type in desired bitrate (ex:  1000000 is 1mbs, none is to leave unchanged): none
 ```
+* This will allow you to take a section of your video instead of the whole thing (in case you just had 5s seconds of important video in a 30s clip). This isn't recommended if you're trying to edit multiple clips at once as it will trim all videos in the folder.
+```
+Would you like to trim the videos? (WARNING this will apply to all videos in folder!) (y or n): y
+```
+* If you selected "y" in the previous prompt you will be asked to input a starting time and an ending time of your trimmed clip. Here if I had a 30s clip I would set start to 0 and end to 15 to get only the first half.
+```
+Please select start time (seconds): 0
+```
+```
+Please select start time (seconds): 15
+```
+###Example
 
+We start with this video:
+
+[![](https://img.youtube.com/vi/stVc8Qd0RmQ/0.jpg)](https://www.youtube.com/watch?v=stVc8Qd0RmQ)
+
+Run the program with this input: 
+
+![This](https://lh3.googleusercontent.com/pw/ADCreHeweoRBT1G1E0lqyt3v8P1ABlMPfN4R-FoYaE-yO_tcp4KrHJsYd-PW2ZPlYLKToFUDLtnfHrze1WIc2vJCmjtDpj6397MsxXtKnPhYMfCaKCld5cUU=w2400)
+
+And we get this:
+
+[![](https://img.youtube.com/vi/ID1PWyKfb_s/0.jpg)](https://www.youtube.com/watch?v=ID1PWyKfb_s)
 
 ## Help
 
-Any advise for common problems or issues.
+* If you run into: 
+
 ```
-command to run if program contains helper info
+module 'PIL.Image' has no attribute 'ANTIALIAS'
 ```
+when trying to run refer to [this](https://github.com/Zulko/moviepy/issues/2002) for help
 
 ## Authors
 
-Contributors names and contact info
+Rusty Harker  
+@6kfz (Discord)
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [MoviePy Documentation](https://zulko.github.io/moviepy/)
+* [zip() code snippets](https://www.geeksforgeeks.org/zip-in-python/)
+* [Python OS Module Documentation](https://docs.python.org/3/library/os.html)
