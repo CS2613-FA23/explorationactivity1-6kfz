@@ -40,6 +40,7 @@ Our outout will be:
 VideoFileClip(video_in).resize(0.5)
 ```
 Our output will be:
+
 [![](https://img.youtube.com/vi/NzRGIbJyMqE/0.jpg)](https://www.youtube.com/watch?v=NzRGIbJyMqE)
 
 * .fx( vfx.speedx, float) -> change the speed of the video (and audio), let's make it twice as fast
